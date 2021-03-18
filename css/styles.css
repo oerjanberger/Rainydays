@@ -1,0 +1,33 @@
+/* Global styles */
+@font-face {
+    font-family:"moniker";
+    src:url("https://p.typekit.net/p.css?s=1&k=xmb3gge&ht=tk&f=33969.33970.33973.33974&a=66670125&app=typekit&e=css");
+    font-display:auto;font-style:normal;font-weight:400;
+    }
+
+body {
+    font-family: "moniker", Arial, Helvetica, sans-serif,
+}
+
+body {
+    background-color: #efeae6;
+}
+
+nav,
+footer {
+    background-color: #bebdba;
+}
+
+
+
+
+
+
+/*Links*/
+
+
+
+
+
+
+/*Home page*/
