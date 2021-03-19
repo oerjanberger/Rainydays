@@ -249,6 +249,10 @@ a {
         grid-row: 3/2;
     }
     
+    .welcome {
+        font-size: 1em;
+    }
+
     .welcome__all-jackets,
     .welcome__mens,
     .welcome__womens {
@@ -258,9 +262,7 @@ a {
 }
 
 @media (max-width: 600px) {
-    .welcome {
-        font-size: 1em;
-    }
+
 
     footer {
         max-height: 150px;
