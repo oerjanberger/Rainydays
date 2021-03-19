@@ -14,58 +14,98 @@
 
 <body>
   <header>
-    <img src="images/Logo/RainyDays_Logo.png" alt="Rainy Days logo - Pushing the Comfort Zone" class="logo"><a
-      href="index.html"></a>
+    <div>
+      <a href="index.html" class="logo__link"><img src="images/Logo/RainyDays_Logo.png"
+          alt="Rainy Days logo - Pushing the Comfort Zone" class="logo"></a>
+    </div>
     <nav>
       <h2>We make Jackets for your every need</h2>
       <ul>
         <li>
-          <label for="search">Search</label>
-          <input type="text" id="search" name="search" />
-          <i class="fas fa-search"></i>
+          <form class="searchbar" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search" alt="search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
         </li>
-        <li>
-          <i class="fas fa-clipboard-list"><a href="wishlist.html">My wishlist</a></i>
+        <li class="nav__elements">
+          <a href="wishlist.html"><i class="fas fa-clipboard-list" alt="My wishlist"></i></a>
         </li>
-        <li>
-          <i class="fas fa-shopping-cart"><a href="cart.html">My cart</a></i>
+        <li class="nav__elements">
+          <a href="cart.html"><i class="fas fa-shopping-cart" alt="My cart"></i></a>
         </li>
-        <li>
-          <i class="far fa-heart"><a href="favorites.html">My favorites</a></i>
+        <li class="nav__elements">
+          <a href="favorites.html"><i class="far fa-heart" alt="My favorites"></i></a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <Section>
-      <h1>All Jackets</h1>
-      <img src="images/Links/toa-heftiba-j5NyzCbyPl8-unsplash.png"
-        alt="Two men and a girl on a grassy and rocky path, all wearing rain jackets" class="homepage__images">
+  <main class="welcome">
+    <Section class="welcome__all-jackets">
+      <div>
+        <a href="all_jackets.html"><img src="images/Links/toa-heftiba-j5NyzCbyPl8-unsplash.png"
+            alt="Two men and a girl on a grassy and rocky path, all wearing rain jackets" class="homepage__images">
+        </a>
+      </div>
+      <div>
+        <a href="all_jackets.html">
+          <h1>All Jackets</h1>
+        </a>
+      </div>
     </Section>
-    <section>
-      <h1>Womens</h1>
-      <img src="images/Links/spurwing-agency-EjCvNhbW70A-unsplash.png"
-        alt="Women in between tall pine trees on a grassy path, wearing a rain jacket" class="homepage__images">
+    <section class="welcome__womens">
+      <div>
+        <a href="womens.html">
+          <img src="images/Links/spurwing-agency-EjCvNhbW70A-unsplash.png"
+            alt="Women in between tall pine trees on a grassy path, wearing a rain jacket" class="homepage__images">
+        </a>
+      </div>
+      <div>
+        <a href="womens.html">
+          <h1>Womens</h1>
+        </a>
+      </div>
     </section>
-    <section>
-      <h1>Mens</h1>
-      <img src="images/Links/john-vicente-dDTCV3xWuu0-unsplash.png"
-        alt="Man staning on old railroad tracks, in the backgorund mountains and a pine forest. The man is wearing a jacket"
-        class="homepage__images">
+    <section class="welcome__mens">
+      <div>
+        <a href="mens.html">
+          <img src="images/Links/john-vicente-dDTCV3xWuu0-unsplash.png"
+            alt="Man staning on old railroad tracks, in the backgorund mountains and a pine forest. The man is wearing a jacket"
+            class="homepage__images">
+        </a>
+      </div>
+      <div>
+        <a href="mens.html">
+          <h1>Mens</h1>
+        </a>
+      </div>
     </section>
   </main>
   <footer>
-    <section>
-      <label for="contact">Contact us</label>
-      <i class="fas fa-phone-alt" name="contact"></i>
-      <label for="about">About us</label>
-      <i class="fas fa-user-circle" name="about"></i>
+    <section class="footer__direction">
+      <div>
+        <a href="contact.html"><i class="fas fa-phone-alt" id="contact" name="contact"></i></a>
+        <label for="contact">Contact us</label>
+      </div>
+      <di>
+        <a href="about.html"><i class="fas fa-user-circle" name="about"></i></a>
+        <label for="about">About us</label>
+      </di>
     </section>
-    <section>
-      <h3>Tag us on social media</h3>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+    <section class="footer__social">
+      <div class="footer__social-h3">
+        <h3>Tag us on social media</h3>
+      </div>
+      <div class="footer__social__icons">
+        <div>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
     </section>
   </footer>
 
