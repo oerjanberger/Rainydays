@@ -9,6 +9,9 @@ body {
     font-family: "moniker", Arial, Helvetica, sans-serif;
     background-color: #efeae6;
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0px auto;
 }
 
 
@@ -19,10 +22,13 @@ header {
 
 
 .logo {
-    width: 20%;
+    max-width: 20%;
     flex: 1;
 }
 
+.logo img {
+    max-width: 400px;
+}
 
 nav,
 footer {
@@ -79,11 +85,10 @@ form.searchbar::after {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1400px;
-    height: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-height: 200px;
     padding-bottom: 20px;
-    margin: 0px auto;
+
 }
 
 footer h3,
@@ -92,8 +97,9 @@ footer label {
 }
 
 .footer__direction {
+    grid-column: 2;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     place-items: center;
 }
 
@@ -104,11 +110,11 @@ footer label {
 }
 
 .footer__social .footer__social-h3 {
-    grid-column: 2/-1;
+    grid-column: 1/-1;
 }
 
 .footer__social .footer__social__icons {
-    grid-column: 2/-1;
+    grid-column: 1;
 }
 
 .footer__social__icons {
@@ -139,15 +145,13 @@ a {
     font-size: 2em;
 }
 
-
-
-
 /*Home page*/
 .welcome {
     font-size: 2.5em;
     color: #738775;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
+    display: grid;
 }
 
 .welcome h1 {
@@ -162,20 +166,20 @@ a {
     padding: 10px;
     margin: 50px 0px;
     display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 .welcome__all-jackets img,
 .welcome__mens img{
-    width: 40vh;
+    width: 30vh;
     height: 20vh;
     object-fit: cover;
     object-position: 30% 35%;
 }
 
 .welcome__womens img {
-    width: 40vh;
+    width: 30vh;
     height: 20vh;
     object-fit: cover;
     object-position: 30% 70%;
