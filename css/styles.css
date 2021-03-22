@@ -84,9 +84,9 @@ footer {
     max-height: 250px;
 }
 
-footer h3,
-footer label {
-    color: #739775;
+footer span,
+footer h3 {
+    color: #113340;
 }
 
 .footer__direction {
