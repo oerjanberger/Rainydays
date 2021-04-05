@@ -1,0 +1,37 @@
+.welcome {
+  font-size: 2.5rem;
+  color: #738775;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.welcome h1 {
+  display: inline-block;
+}
+
+.welcome__all-jackets,
+.welcome__mens,
+.welcome__womens {
+  background-color: #113340;
+  padding: 10px;
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.welcome__all-jackets img,
+.welcome__mens img {
+  width: 30vh;
+  height: 20vh;
+  object-fit: cover;
+  object-position: 30% 35%;
+}
+
+.welcome__womens img {
+  width: 30vh;
+  height: 20vh;
+  object-fit: cover;
+  object-position: 30% 70%;
+}
