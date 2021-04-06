@@ -15,7 +15,6 @@
     display: inline-block;
     margin: 0px auto;
     display: grid;
-    grid-column: 1fr;
   }
 
   nav {
@@ -88,5 +87,9 @@
     max-height: 160px;
     font-size: 0.7em;
     grid-template-columns: 1fr auto 1fr;
+  }
+
+  .logo img {
+    max-width: 350px;
   }
 }

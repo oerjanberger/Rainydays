@@ -1,0 +1,44 @@
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    color: #434343;
+    margin: 0px auto;
+}
+
+h1 {
+    color: #113340;
+}
+
+.telephone {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.info {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons {
+    display: inline-block;
+    margin: 10px 10px 40px 10px;
+}
+
+@media (min-width: 1750px) {
+    main {
+        margin-left: 500px;
+    }
+}
