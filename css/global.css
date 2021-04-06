@@ -59,6 +59,29 @@ nav li {
   margin: 0px 20px;
 }
 
+#dropdown, .gender__navigation {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.gender__navigation {
+  background-color: #BEBDBA;
+  position: absolute;
+  padding: 10px;
+  left: 0px;
+}
+
+#dropdown:checked ~ .gender__navigation {
+  display: block;
+}
+.selector__color {
+  color: #113340;
+}
+
+
 form.searchbar * {
   box-sizing: border-box;
 }

@@ -1,0 +1,15 @@
+main {
+    color: #434343;
+    margin: 0px auto;
+}
+
+.checkout__complete {
+    display: inline-block;
+    border: solid #bebdba;
+}
+
+@media (min-width: 1750px) {
+    main {
+        margin-left: 500px;
+    }
+}

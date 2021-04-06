@@ -1,0 +1,146 @@
+main {
+    margin: 0px auto;
+}
+
+.aside-section {
+    margin-bottom: 20px
+}
+
+h1 {
+    color: #113340;
+}
+
+.aside-section {
+    border: 1px solid #113340;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+}
+
+
+.product__images {
+    float: right;
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 20% 60%;
+}
+
+.product-info-container {
+    margin: 10px 10px 10px 20px;
+}
+
+.name-price-container {
+    display: flex;
+}
+
+.jacket-name {
+    display: inline-block;
+    margin: 0px 300px 0px 0px;
+    font-weight: normal;
+    color: #113340;
+}
+
+.price-tag,
+.gender {
+    margin: 0px;
+}
+
+.colours-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+.size-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.star-button-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+
+.fa-star,
+.fa-star-half {
+    color:#ff9e78;
+    font-size: 1.2rem;
+}
+
+.button {
+    border-radius: 8px;
+    background-color: #113340;
+    color: #efeae6;
+    width: 150px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* Available Colours*/
+
+.colours {
+    display: flex;
+}
+
+.red {
+    border: solid red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: red;
+}
+.blue {
+    border: solid #231887;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #231887;
+}
+.orange {
+    border: solid #ff9e78;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ff9e78;
+}
+.pink {
+    border: solid #9f14a4;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #9f14a4;
+}
+.teal {
+    border: solid #25ac9a;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #25ac9a;
+}
+
+/*Available sizes*/
+.sizes {
+    display: inline-block;
+    background-color: #bebdba;
+    margin: 3px;
+    padding: 2px;
+    min-width: 20px;
+    text-align: center;
+}
