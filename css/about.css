@@ -1,7 +1,4 @@
 main {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
     color: #434343;
     margin: 0px auto;
 }
