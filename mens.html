@@ -34,19 +34,25 @@
             </form>
           </li>
         </div>
-        <div class="nav-section">
-          <label for="dropdown"><i class="fas fa-bars"></i></label>
+        <div class="nav-section hyperlinks">
+          <label for="dropdown" class="hamburger-menu"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="dropdown">
           <section class="gender__navigation">
-            <a href="womens.html">
-              <p class="selector__color">Womens</p>
-            </a>
-            <a href="mens.html">
-              <p class="selector__color">Mens</p>
-            </a>
-            <a href="all_jackets.html">
-              <p class="selector__color">All Jackets</p>
-            </a>
+            <div>
+              <a href="womens.html">
+                <p class="selector__color selector__container">Womens</p>
+              </a>
+            </div>
+            <div>
+              <a href="mens.html">
+                <p class="selector__color selector__container">Mens</p>
+              </a>
+            </div>
+            <div>
+              <a href="all_jackets.html">
+                <p class="selector__color selector__container">All Jackets</p>
+              </a>
+            </div>
           </section>
           <li class="navelements">
             <a href="wishlist.html"><i class="fas fa-clipboard-list navicon" alt="My wishlist"></i></a>
@@ -63,12 +69,102 @@
   </header>
   <main>
     <h1>Mens</h1>
+    <section class="filter-row">
+      <div class="button-adjustment">
+        <label for="filter-two">
+          <p class="filter-button">Sizes</p>
+        </label>
+        <input type="checkbox" id="filter-two">
+        <section class="filter-size">
+          <div class="checkbox-placement">
+            <label for="xs">XS</label>
+            <input type="checkbox" id="xs">
+          </div>
+          <div class="checkbox-placement">
+            <label for="s">S</label>
+            <input type="checkbox" id="s">
+          </div>
+          <div class="checkbox-placement">
+            <label for="m">M</label>
+            <input type="checkbox" id="m">
+          </div>
+          <div class="checkbox-placement">
+            <label for="l">XL</label>
+            <input type="checkbox" id="l">
+          </div>
+          <div class="checkbox-placement">
+            <label for="xl">XL</label>
+            <input type="checkbox" id="xl">
+          </div>
+          <div class="checkbox-placement">
+            <label for="xxl">XXL</label>
+            <input type="checkbox" id="xxl">
+          </div>
+        </section>
+      </div>
+      <div class="button-adjustment">
+        <label for="filter-three">
+          <p class="filter-button">Colour</p>
+        </label>
+        <input type="checkbox" id="filter-three">
+        <section class="filter-colour">
+          <div class="checkbox-placement">
+            <p class="red" title="red"></p>
+            <input type="checkbox" id="red">
+          </div>
+          <div class="checkbox-placement">
+            <p class="blue" title="blue"></p>
+            <input type="checkbox" id="blue">
+          </div>
+          <div class="checkbox-placement">
+            <p class="orange" title="orange"></p>
+            <input type="checkbox" id="orange">
+          </div>
+          <div class="checkbox-placement">
+            <p class="pink" title="pink"></p>
+            <input type="checkbox" id="ping">
+          </div>
+          <div class="checkbox-placement">
+            <p class="teal" title="teal"></p>
+            <input type="checkbox" id="teal">
+          </div>
+        </section>
+      </div>
+      <div class="button-adjustment">
+        <label for="filter-four">
+          <p class="filter-button">Sort By</p>
+        </label>
+        <input type="checkbox" id="filter-four">
+        <section class="filter-sortby">
+          <div class="checkbox-placement">
+            <label for="newest">Newest</label>
+            <input type="checkbox" id="newest">
+          </div>
+          <div class="checkbox-placement">
+            <label for="oldest">Oldest</label>
+            <input type="checkbox" id="oldest">
+          </div>
+          <div class="checkbox-placement">
+            <label for="high">Price High</label>
+            <input type="checkbox" id="high">
+          </div>
+          <div class="checkbox-placement">
+            <label for="low">Price Low</label>
+            <input type="checkbox" id="low">
+          </div>
+          <div class="checkbox-placement">
+            <label for="rating">Rating</label>
+            <input type="checkbox" id="rating">
+          </div>
+        </section>
+      </div>
+    </section>
     <aside>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/erik-mclean-ARZGVBtf9Vw-unsplash.png"
-              alt="Man with camo jacket walking on a path with red and yellow leaves on the ground and on the trees "
-              class="product__images"></a>
+              alt="Man with camo jacket walking on a path with red and yellow leaves on the ground and on the trees"
+              class="product__images image-1"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -109,14 +205,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/kal-visuals-cBZWCU2eA60-unsplash.png"
-              alt="Man wearing a red jacket on the beach during the sunset" class="product__images"></a>
+              alt="Man wearing a red jacket on the beach during the sunset" class="product__images image-2"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -157,14 +255,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/deogratias-saidi-bPlEtQy_R8o-unsplash.png"
-              alt="Man with green jacket holding an umbrella in the mountains" class="product__images"></a>
+              alt="Man with green jacket holding an umbrella in the mountains" class="product__images image-3"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -205,14 +305,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/vadim-sadovski--Q9YUzjHuis-unsplash.png"
-              alt="Man in grey jacket walking through tall brown plants" class="product__images"></a>
+              alt="Man in grey jacket walking through tall brown plants" class="product__images image-4"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -253,14 +355,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/ramiz-dedakovic-yFnPxm9pnPo-unsplash.png"
-              alt="Man with dark blue jacket in a snowy open forest" class="product__images"></a>
+              alt="Man with dark blue jacket in a snowy open forest" class="product__images image-5"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -301,14 +405,17 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/zach-castillo-Lss2BdwBKho-unsplash.png"
-              alt="Man with a blue jacket on the beach in a fjord during the winter" class="product__images"></a>
+              alt="Man with a blue jacket on the beach in a fjord during the winter"
+              class="product__images image-6"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -349,14 +456,16 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="aside-section">
         <div class="product-image-container">
           <a href="products/green_comfort.html"><img src="images/Products/kaze-0421-RDKvulZ9bao-unsplash.png"
-              alt="Man with a black jacket in a snowy forest" class="product__images"></a>
+              alt="Man with a black jacket in a snowy forest" class="product__images image-7"></a>
         </div>
         <div class="product-info-container">
           <div class="name-price-container">
@@ -397,7 +506,9 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half"></i>
             </div>
-            <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
           </div>
         </div>
       </section>

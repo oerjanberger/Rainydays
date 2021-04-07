@@ -8,7 +8,7 @@
   <meta name="description" content="Rainy Days, We make jakets for your every neeed">
   <link rel="stylesheet" href="https://use.typekit.net/xmb3gge.css">
   <link href="css/global.css" rel="stylesheet">
-  <link href="css/all_jackets.css" rel="stylesheet">
+  <link href="css/womens.css" rel="stylesheet">
   <link href="css/variables.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/591f5bf3d7.js" crossorigin="anonymous"></script>
   <title>Rainy Days | Womens</title>
@@ -34,19 +34,25 @@
             </form>
           </li>
         </div>
-        <div class="nav-section">
-          <label for="dropdown"><i class="fas fa-bars"></i></label>
+        <div class="nav-section hyperlinks">
+          <label for="dropdown" class="hamburger-menu"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="dropdown">
           <section class="gender__navigation">
-            <a href="womens.html">
-              <p class="selector__color">Womens</p>
-            </a>
-            <a href="mens.html">
-              <p class="selector__color">Mens</p>
-            </a>
-            <a href="all_jackets.html">
-              <p class="selector__color">All Jackets</p>
-            </a>
+            <div>
+              <a href="womens.html">
+                <p class="selector__color selector__container">Womens</p>
+              </a>
+            </div>
+            <div>
+              <a href="mens.html">
+                <p class="selector__color selector__container">Mens</p>
+              </a>
+            </div>
+            <div>
+              <a href="all_jackets.html">
+                <p class="selector__color selector__container">All Jackets</p>
+              </a>
+            </div>
           </section>
           <li class="navelements">
             <a href="wishlist.html"><i class="fas fa-clipboard-list navicon" alt="My wishlist"></i></a>
@@ -63,40 +69,452 @@
   </header>
   <main>
     <h1>Womens</h1>
-    <section class="product__info">
-      <div>
-        <img src="images/Products/laura-chouette-b3oJq2cFIQ0-unsplash.png"
-          alt="Women in white Jacket leaning against trees in the snow" class="product__images">
+    <section class="filter-row">
+      <div class="button-adjustment">
+        <label for="filter-two">
+          <p class="filter-button">Sizes</p>
+        </label>
+        <input type="checkbox" id="filter-two">
+        <section class="filter-size">
+          <div class="checkbox-placement">
+            <label for="xs">XS</label>
+            <input type="checkbox" id="xs">
+          </div>
+          <div class="checkbox-placement">
+            <label for="s">S</label>
+            <input type="checkbox" id="s">
+          </div>
+          <div class="checkbox-placement">
+            <label for="m">M</label>
+            <input type="checkbox" id="m">
+          </div>
+          <div class="checkbox-placement">
+            <label for="l">XL</label>
+            <input type="checkbox" id="l">
+          </div>
+          <div class="checkbox-placement">
+            <label for="xl">XL</label>
+            <input type="checkbox" id="xl">
+          </div>
+          <div class="checkbox-placement">
+            <label for="xxl">XXL</label>
+            <input type="checkbox" id="xxl">
+          </div>
+        </section>
       </div>
-      <div>
-        <h3>Green Comfort</h3>
-        <p>Kr 1500</p>
-        <p>Womens</p>
+      <div class="button-adjustment">
+        <label for="filter-three">
+          <p class="filter-button">Colour</p>
+        </label>
+        <input type="checkbox" id="filter-three">
+        <section class="filter-colour">
+          <div class="checkbox-placement">
+            <p class="red" title="red"></p>
+            <input type="checkbox" id="red">
+          </div>
+          <div class="checkbox-placement">
+            <p class="blue" title="blue"></p>
+            <input type="checkbox" id="blue">
+          </div>
+          <div class="checkbox-placement">
+            <p class="orange" title="orange"></p>
+            <input type="checkbox" id="orange">
+          </div>
+          <div class="checkbox-placement">
+            <p class="pink" title="pink"></p>
+            <input type="checkbox" id="ping">
+          </div>
+          <div class="checkbox-placement">
+            <p class="teal" title="teal"></p>
+            <input type="checkbox" id="teal">
+          </div>
+        </section>
       </div>
-      <div class="product__availability">
-        <p>Colours:</p>
-        <div class="product__sizes-colors">
-          <p class="red"></p>
-          <p class="blue"></p>
-          <p class="orange"></p>
-          <p class="pink"></p>
-          <p class="teal"></p>
-        </div>
+      <div class="button-adjustment">
+        <label for="filter-four">
+          <p class="filter-button">Sort By</p>
+        </label>
+        <input type="checkbox" id="filter-four">
+        <section class="filter-sortby">
+          <div class="checkbox-placement">
+            <label for="newest">Newest</label>
+            <input type="checkbox" id="newest">
+          </div>
+          <div class="checkbox-placement">
+            <label for="oldest">Oldest</label>
+            <input type="checkbox" id="oldest">
+          </div>
+          <div class="checkbox-placement">
+            <label for="high">Price High</label>
+            <input type="checkbox" id="high">
+          </div>
+          <div class="checkbox-placement">
+            <label for="low">Price Low</label>
+            <input type="checkbox" id="low">
+          </div>
+          <div class="checkbox-placement">
+            <label for="rating">Rating</label>
+            <input type="checkbox" id="rating">
+          </div>
+        </section>
       </div>
-      <div class="product__availability">
-        <p>Sizes:</p>
-        <div class="product__sizes-colors">
-          <p class="sizes">XS</p>
-          <p class="sizes">S</p>
-          <p class="sizes">M</p>
-          <p class="sizes">L</p>
-          <p class="sizes">XL</p>
-          <p class="sizes">XXL</p>
-        </div>
-      </div>
-
-
     </section>
+    <aside>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/laura-chouette-b3oJq2cFIQ0-unsplash.png"
+              alt="Women wearing a white Jacket leaning on tree in a forest with snow and leaves on the ground"
+              class="product__images image-1"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/milos-trajkovic-VxlF-7Pw_u8-unsplash.png"
+              alt="Woman standing in the middle of a road in a green jacket" class="product__images image-2"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/marina-abrosimova-GTdMvjXonAw-unsplash.png"
+              alt="Woman with a beige jacket standing in a park with trees all around covered with red and yellow leaves"
+              class="product__images image-3"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/rez-Wvc-dtLxOFc-unsplash.png"
+              alt="Woman wearing a brown jacket standing on a sidewalk, holding a green umbrella"
+              class="product__images image-4"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/rikonavt-IqrSz0KwrG8-unsplash.png"
+              alt="Woman with a brown jacket walking on grass towards a forest" class="product__images image-5"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/where-is-pykh-SbLTJnY7GXk-unsplash.png"
+              alt="Woman wearing a yellow jacket sitting on a rock atop a mountain" class="product__images image-6"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/ahmadreza-najafi-HHLrKTwSnm4-unsplash.png"
+              alt="Woman wearing a black jakcet standing on a road in a park with trees on both sides"
+              class="product__images image-7"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </aside>
   </main>
   <footer>
     <section class="footer__direction">

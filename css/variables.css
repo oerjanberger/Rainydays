@@ -80,6 +80,38 @@
     margin: 10px 0px;
     padding: 10px;
   }
+
+  .hyperlinks {
+    display: inline-block;
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  #dropdown, .gender__navigation {
+    display: none;
+  }
+  
+  label:hover {
+    cursor: pointer;
+  }
+  
+  .gender__navigation {
+    background-color: #BEBDBA;
+    position: absolute;
+    padding: 10px;
+    left: 0px;
+  }
+  
+  #dropdown:checked ~ .gender__navigation {
+    display: block;
+  }
+  .selector__color {
+    color: #113340;
+  }
+ 
 }
 
 @media (max-width: 600px) {

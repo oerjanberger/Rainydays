@@ -2,6 +2,10 @@ main {
     margin: 0px auto;
 }
 
+.aside-section {
+    margin-bottom: 20px
+}
+
 h1 {
     color: #113340;
 }
@@ -10,32 +14,13 @@ h1 {
 
     .filter-row {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .button-adjustment {
         place-self: center;
     }
 
-
-    #filter, .filter-gender {
-        display: none;
-    }
-  
-    label:hover {
-        cursor: pointer;
-    }
-  
-    .filter-gender  {
-        background-color: #BEBDBA;
-        border-radius: 5px;
-        position: absolute;
-        padding: 10px;
-    }
-    
-    #filter:checked ~ .filter-gender {
-        display: block;
-    }
     .selector__color {
         color: #113340;
     }
@@ -103,7 +88,7 @@ h1 {
         cursor: pointer;
       }
       
-      .filter-sortby  {
+      .filter-sortby {
         background-color: #BEBDBA;
         border-radius: 5px;
         position: absolute;
@@ -121,7 +106,6 @@ h1 {
     justify-items: start;
     height: 25vh;
     width: 80vh;
-    margin-bottom: 20px
 }
 
 /* Image adjustment */
@@ -131,24 +115,19 @@ h1 {
     object-fit: cover;
 }
 
-.image-1 {
-    object-position: center top;
-}
 
-.image-3 {
-    object-position: 65% 20% ;
-}
 
-.image-4 {
-    object-position: center bottom;
+.image-5  {
+    object-position: center 30%;
 }
 
 .image-6 {
-    object-position: center right;
+    object-position: center bottom;
 }
 
+
 .image-7 {
-    object-position: center 95%;
+    object-position: center 20%;
 }
 
 
@@ -356,9 +335,5 @@ h1 {
 @media (max-width: 390px) {
     .filter-sortby {
         left: 245px;
-    }
-
-    .filter-gender {
-        left: 0px;
     }
 }

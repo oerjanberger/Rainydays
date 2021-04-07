@@ -10,36 +10,142 @@ h1 {
     color: #113340;
 }
 
+    /* filter Gender */
+
+    .filter-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .button-adjustment {
+        place-self: center;
+    }
+
+    .selector__color {
+        color: #113340;
+    }
+
+    .filter-button {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #bebdba;
+    }
+
+    .checkbox-placement {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+  /* Filter sizes */
+  #filter-two, .filter-size {
+    display: none;
+  }
+  
+  label:hover {
+    cursor: pointer;
+  }
+  
+  #filter-two:checked ~ .filter-size {
+    display: block;
+  }
+
+
+  .filter-size  {
+    background-color: #BEBDBA;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+  }
+
+   /* Filter colour */
+    #filter-three, .filter-colour {
+        display: none;
+      }
+      
+      label:hover {
+        cursor: pointer;
+      }
+      
+      .filter-colour  {
+        background-color: #BEBDBA;
+        border-radius: 5px;
+        position: absolute;
+        padding: 10px;
+      }
+      
+      #filter-three:checked ~ .filter-colour {
+        display: block;
+      }
+    
+
+/* Filter colour */
+    #filter-four, .filter-sortby {
+        display: none;
+      }
+      
+      label:hover {
+        cursor: pointer;
+      }
+      
+      .filter-sortby  {
+        background-color: #BEBDBA;
+        border-radius: 5px;
+        position: absolute;
+        padding: 10px;
+      }
+      
+      #filter-four:checked ~ .filter-sortby {
+        display: block;
+      }
+
+
 .aside-section {
     border: 1px solid #113340;
     display: grid;
     grid-template-columns: auto 1fr;
     justify-items: start;
+    height: 25vh;
+    width: 80vh;
 }
 
-
+/* Image adjustment */
 .product__images {
-    float: right;
-    width: 30vh;
-    height: 30vh;
+    width: 25vh;
+    height: 25vh;
     object-fit: cover;
-    object-position: 20% 60%;
 }
+
+.image-1 {
+    object-position: center top;
+}
+
+.image-2,
+.image-5  {
+    object-position: center bottom;
+}
+
+.image-3 {
+    object-position: center right;
+}
+
+.image-7 {
+    object-position: 30%;
+}
+
 
 .product-info-container {
     margin: 10px 10px 10px 20px;
 }
 
-.name-price-container {
-    display: flex;
-}
 
 .jacket-name {
     display: inline-block;
-    margin: 0px 300px 0px 0px;
+    margin: 0px;
     font-weight: normal;
     color: #113340;
 }
+
 
 .price-tag,
 .gender {
@@ -58,15 +164,20 @@ h1 {
     grid-template-columns: auto 1fr;
     justify-items: start;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 6vh;
 }
 
-.star-button-container {
+.star-button-container,
+.name-price-container {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-columns: 20vh 30vh;
 }
 
+
+.price-tag,
+.button-container {
+    justify-self: right;
+}
 
 .fa-star,
 .fa-star-half {
@@ -143,4 +254,89 @@ h1 {
     padding: 2px;
     min-width: 20px;
     text-align: center;
+}
+
+@media (max-height: 1000px) {
+    .size-container {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .aside-section {
+        max-width: 350px;
+    }
+
+    .star-button-container,
+    .name-price-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+
+
+    .name-price-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colours-container,
+    .size-container,
+    .stars {
+        display: none;
+    }
+
+    .gender {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        max-width: 100px;
+    }
+
+    .button-container {
+        justify-self: left;
+    }
+    
+}
+
+@media (max-height: 780px) {
+    .aside-section {
+        max-width: 350px;
+    }
+
+    .star-button-container,
+    .name-price-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+
+    .name-price-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colours-container,
+    .size-container,
+    .stars  {
+        display: none;
+    }
+
+    .gender {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        max-width: 100px;
+    }
+
+    .button-container {
+        justify-self: left;
+    }
+    
+}
+
+@media (max-width: 390px) {
+    .filter-sortby {
+        left: 245px;
+    }
 }

@@ -11,7 +11,7 @@
   <link href="css/all_jackets.css" rel="stylesheet">
   <link href="css/variables.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/591f5bf3d7.js" crossorigin="anonymous"></script>
-  <title>Rainy Days | Home</title>
+  <title>Rainy Days | All Jakcets</title>
 </head>
 
 <body>
@@ -34,19 +34,25 @@
             </form>
           </li>
         </div>
-        <div class="nav-section">
-          <label for="dropdown"><i class="fas fa-bars"></i></label>
+        <div class="nav-section hyperlinks">
+          <label for="dropdown" class="hamburger-menu"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="dropdown">
           <section class="gender__navigation">
-            <a href="womens.html">
-              <p class="selector__color">Womens</p>
-            </a>
-            <a href="mens.html">
-              <p class="selector__color">Mens</p>
-            </a>
-            <a href="all_jackets.html">
-              <p class="selector__color">All Jackets</p>
-            </a>
+            <div>
+              <a href="womens.html">
+                <p class="selector__color selector__container">Womens</p>
+              </a>
+            </div>
+            <div>
+              <a href="mens.html">
+                <p class="selector__color selector__container">Mens</p>
+              </a>
+            </div>
+            <div>
+              <a href="all_jackets.html">
+                <p class="selector__color selector__container">All Jackets</p>
+              </a>
+            </div>
           </section>
           <li class="navelements">
             <a href="wishlist.html"><i class="fas fa-clipboard-list navicon" alt="My wishlist"></i></a>
@@ -62,6 +68,473 @@
     </nav>
   </header>
   <main>
+    <h1>All Jackets</h1>
+    <section class="filter-row">
+      <div class="button-adjustment">
+        <label for="filter">
+          <p class="filter-button">Gender</p>
+        </label>
+        <input type="checkbox" id="filter">
+        <section class="filter-gender">
+          <div class="checkbox-placement">
+            <label for="all-jackets">All Jackets</label>
+            <input type="checkbox" id="all-jackets">
+          </div>
+          <div class="checkbox-placement">
+            <label for="womens">Womens</label>
+            <input type="checkbox" id="Womens">
+          </div>
+          <div class="checkbox-placement">
+            <label for="mens">Mens</label>
+            <input type="checkbox" id="mens">
+          </div>
+        </section>
+      </div>
+      <div class="button-adjustment">
+        <label for="filter-two">
+          <p class="filter-button">Sizes</p>
+        </label>
+        <input type="checkbox" id="filter-two">
+        <section class="filter-size">
+          <div class="checkbox-placement">
+            <label for="xs">XS</label>
+            <input type="checkbox" id="xs">
+          </div>
+          <div class="checkbox-placement">
+            <label for="s">S</label>
+            <input type="checkbox" id="s">
+          </div>
+          <div class="checkbox-placement">
+            <label for="m">M</label>
+            <input type="checkbox" id="m">
+          </div>
+          <div class="checkbox-placement">
+            <label for="l">XL</label>
+            <input type="checkbox" id="l">
+          </div>
+          <div class="checkbox-placement">
+            <label for="xl">XL</label>
+            <input type="checkbox" id="xl">
+          </div>
+          <div class="checkbox-placement">
+            <label for="xxl">XXL</label>
+            <input type="checkbox" id="xxl">
+          </div>
+        </section>
+      </div>
+      <div class="button-adjustment">
+        <label for="filter-three">
+          <p class="filter-button">Colour</p>
+        </label>
+        <input type="checkbox" id="filter-three">
+        <section class="filter-colour">
+          <div class="checkbox-placement">
+            <p class="red" title="red"></p>
+            <input type="checkbox" id="red">
+          </div>
+          <div class="checkbox-placement">
+            <p class="blue" title="blue"></p>
+            <input type="checkbox" id="blue">
+          </div>
+          <div class="checkbox-placement">
+            <p class="orange" title="orange"></p>
+            <input type="checkbox" id="orange">
+          </div>
+          <div class="checkbox-placement">
+            <p class="pink" title="pink"></p>
+            <input type="checkbox" id="ping">
+          </div>
+          <div class="checkbox-placement">
+            <p class="teal" title="teal"></p>
+            <input type="checkbox" id="teal">
+          </div>
+        </section>
+      </div>
+      <div class="button-adjustment">
+        <label for="filter-four">
+          <p class="filter-button">Sort By</p>
+        </label>
+        <input type="checkbox" id="filter-four">
+        <section class="filter-sortby">
+          <div class="checkbox-placement">
+            <label for="newest">Newest</label>
+            <input type="checkbox" id="newest">
+          </div>
+          <div class="checkbox-placement">
+            <label for="oldest">Oldest</label>
+            <input type="checkbox" id="oldest">
+          </div>
+          <div class="checkbox-placement">
+            <label for="high">Price High</label>
+            <input type="checkbox" id="high">
+          </div>
+          <div class="checkbox-placement">
+            <label for="low">Price Low</label>
+            <input type="checkbox" id="low">
+          </div>
+          <div class="checkbox-placement">
+            <label for="rating">Rating</label>
+            <input type="checkbox" id="rating">
+          </div>
+        </section>
+      </div>
+    </section>
+    <aside>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/erik-mclean-ARZGVBtf9Vw-unsplash.png"
+              alt="Man with camo jacket walking on a path with red and yellow leaves on the ground and on the trees "
+              class="product__images image-1"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/laura-chouette-b3oJq2cFIQ0-unsplash.png"
+              alt="Women wearing a white Jacket leaning on tree in a forest with snow and leaves on the ground"
+              class="product__images image-2"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/irvan-mulyadi-ihG9xMEji2s-unsplash.png"
+              alt="A man and woman waring a purple and red jacket walkin on a road, holding hands"
+              class="product__images image-3"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/kal-visuals-cBZWCU2eA60-unsplash.png"
+              alt="Man wearing a red jacket on the beach during the sunset" class="product__images image-4"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/milos-trajkovic-VxlF-7Pw_u8-unsplash.png"
+              alt="Woman standing in the middle of a road in a green jacket" class="product__images image-5"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/deogratias-saidi-bPlEtQy_R8o-unsplash.png"
+              alt="Man with green jacket holding an umbrella in the mountains" class="product__images image-6"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aside-section">
+        <div class="product-image-container">
+          <a href="products/green_comfort.html"><img src="images/Products/jed-villejo-5XN3QtqgjKI-unsplash.png"
+              alt="Woman wearing a brown jacket standing on a hill overlooking the ocean"
+              class="product__images image-7"></a>
+        </div>
+        <div class="product-info-container">
+          <div class="name-price-container">
+            <a href="products/green_comfort.html">
+              <h3 class="jacket-name">Green Comfort</h3>
+            </a>
+            <p class="price-tag">Kr 1500</p>
+          </div>
+          <div class="gender-container">
+            <p class="gender">Mens</p>
+          </div>
+          <div class="colours-container">
+            <p>Colours:</p>
+            <div class="colours">
+              <p class="red" title="red"></p>
+              <p class="blue" title="blue"></p>
+              <p class="orange" title=" orange"></p>
+              <p class="pink" title="pink"></p>
+              <p class="teal" title="teal"></p>
+            </div>
+          </div>
+          <div class="size-container">
+            <p>Sizes:</p>
+            <div>
+              <p class="sizes">XS</p>
+              <p class="sizes">S</p>
+              <p class="sizes">M</p>
+              <p class="sizes">L</p>
+              <p class="sizes">XL</p>
+              <p class="sizes">XXL</p>
+            </div>
+          </div>
+          <div class="star-button-container">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="button-container">
+              <a href="products/green_comfort.html"><button class="button">View Item</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </aside>
   </main>
   <footer>
     <section class="footer__direction">
