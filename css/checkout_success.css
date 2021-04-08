@@ -1,15 +1,60 @@
 main {
-    color: #434343;
     margin: 0px auto;
 }
 
-.checkout__complete {
-    display: inline-block;
-    border: solid #bebdba;
+h1 {
+    color: #113340;
 }
 
-@media (min-width: 1750px) {
-    main {
-        margin-left: 500px;
-    }
+.order-container {
+    border: 1px solid #bebdba;
+    margin-bottom: 20px;
 }
+
+.personal-info {
+    margin: 0px;
+    font-size: 1.3rem;
+    color: rgb(61, 57, 57);
+}
+
+.specific-order-container {
+    display: grid;
+    grid-template-columns: 1fr 100px 50px;
+    border-bottom: 1px solid #bebdba;
+}
+
+.order-text {
+    margin: 0px;
+}
+
+.order-heading {
+    font-weight: bold;
+}
+
+.number-container,
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.total-price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.total-price {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: normal;
+    color: #113340;
+}
+
+.instagram-tag-placement {
+    text-align: center;
+    margin-bottom: 20px;
+}
+

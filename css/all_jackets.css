@@ -36,9 +36,7 @@ h1 {
     #filter:checked ~ .filter-gender {
         display: block;
     }
-    .selector__color {
-        color: #113340;
-    }
+  
 
     .filter-button {
         display: inline-block;
@@ -274,15 +272,17 @@ h1 {
     text-align: center;
 }
 
+
+/*media queries for this page */
 @media (max-height: 1000px) {
     .size-container {
         margin-bottom: 0px;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 890px) {
     .aside-section {
-        max-width: 350px;
+        max-width: 500px;
     }
 
     .star-button-container,
@@ -319,11 +319,10 @@ h1 {
 
 @media (max-height: 780px) {
     .aside-section {
-        max-width: 350px;
+        max-width: 500px;
     }
 
-    .star-button-container,
-    .name-price-container {
+    .star-button-container {
     display: grid;
     grid-template-columns: auto auto;
     }
@@ -356,9 +355,5 @@ h1 {
 @media (max-width: 390px) {
     .filter-sortby {
         left: 245px;
-    }
-
-    .filter-gender {
-        left: 0px;
     }
 }

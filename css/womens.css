@@ -115,8 +115,6 @@ h1 {
     object-fit: cover;
 }
 
-
-
 .image-5  {
     object-position: center 30%;
 }
@@ -169,7 +167,6 @@ h1 {
     display: grid;
     grid-template-columns: 20vh 30vh;
 }
-
 
 .price-tag,
 .button-container {
@@ -253,15 +250,16 @@ h1 {
     text-align: center;
 }
 
+/*media queries for this page */
 @media (max-height: 1000px) {
     .size-container {
         margin-bottom: 0px;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 890px) {
     .aside-section {
-        max-width: 350px;
+        max-width: 500px;
     }
 
     .star-button-container,
@@ -298,11 +296,10 @@ h1 {
 
 @media (max-height: 780px) {
     .aside-section {
-        max-width: 350px;
+        max-width: 500px;
     }
 
-    .star-button-container,
-    .name-price-container {
+    .star-button-container {
     display: grid;
     grid-template-columns: auto auto;
     }

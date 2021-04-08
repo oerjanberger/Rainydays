@@ -1,0 +1,96 @@
+h1 {
+    color: #113340;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.order-container {
+    border: 1px solid #bebdba;
+    margin-bottom: 20px;
+}
+
+.specific-order-container {
+    display: grid;
+    grid-template-columns: 1fr 100px 50px;
+    border-bottom: 1px solid #bebdba;
+}
+
+.order-text {
+    margin: 0px;
+}
+
+.order-heading {
+    font-weight: bold;
+}
+
+.number-container,
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.total-price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.total-price {
+    text-decoration: underline;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+}
+
+
+.input-container {
+    display: grid;
+    grid-template-rows: auto auto;
+
+}
+
+.input {
+    border: 2px solid #bebdba;
+    border-radius: 5px;
+    max-width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+ 
+.checkbox:hover {
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+  
+#billing-adress:checked ~ .billing-adress-container {
+    display: none;
+}
+
+.remove-button-placement {
+    display: grid;
+    justify-items: end;
+    margin: 0px 10px 20px 0px;
+  }
+
+
+  @media (min-width: 851px) {
+    main {
+        margin: 0px 40vh 20px 40vh;
+    }
+  }
+
+
+  @media (max-width: 850px) {
+    main {
+        margin: 0px auto;
+    }
+  }

@@ -77,6 +77,10 @@ nav li {
   margin: 10px;
 }
 
+.selector__color {
+  color: #113340;
+}
+
 form.searchbar * {
   box-sizing: border-box;
 }
@@ -150,4 +154,35 @@ a {
 .far {
   color: #113340;
   font-size: 2em;
+}
+
+
+/* buttons and stars */
+.fa-star,
+.fa-star-half {
+    color:#ff9e78;
+    font-size: 1.2rem;
+}
+
+.button {
+    border-radius: 8px;
+    background-color: #113340;
+    color: #efeae6;
+    width: 150px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.share-button {
+  background-color: #738775;
+}
+
+.checkout-button {
+  background-color: #ff9e78;
+  color: #113340;
 }

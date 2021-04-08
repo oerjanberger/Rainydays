@@ -10,7 +10,7 @@
   <link href="css/checkout.css" rel="stylesheet">
   <link href="css/variables.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/591f5bf3d7.js" crossorigin="anonymous"></script>
-  <title>Rainy Days | Home</title>
+  <title>Rainy Days | Checkout</title>
 </head>
 
 <body>
@@ -67,6 +67,161 @@
     </nav>
   </header>
   <main>
+    <h1>Checkout</h1>
+    <h3>Your Order</h3>
+    <section class="order-container">
+      <div class="specific-order-container">
+        <div class="article-container">
+          <div>
+            <p class="order-heading">Articles</p>
+          </div>
+          <div>
+            <p class="order-text">Green Comfort</p>
+            <p class="order-text">Women</p>
+            <p class="order-text">Colour Pink</p>
+            <p class="order-text">Size Medium</p>
+          </div>
+        </div>
+        <div class="number-container">
+          <div>
+            <p class="order-heading">Number</p>
+          </div>
+          <div>
+            <p>x1</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <div>
+            <p class="order-heading">Price</p>
+          </div>
+          <div>
+            <p>1500,-</p>
+          </div>
+        </div>
+      </div>
+      <div class="specific-order-container">
+        <div class="article-container">
+          <div>
+            <p class="order-heading">Articles</p>
+          </div>
+          <div>
+            <p class="order-text">Green Comfort</p>
+            <p class="order-text">Women</p>
+            <p class="order-text">Colour Pink</p>
+            <p class="order-text">Size Medium</p>
+          </div>
+        </div>
+        <div class="number-container">
+          <div>
+            <p class="order-heading">Number</p>
+          </div>
+          <div>
+            <p>x1</p>
+          </div>
+        </div>
+        <div class="price-container">
+          <div>
+            <p class="order-heading">Price</p>
+          </div>
+          <div>
+            <p>1500,-</p>
+          </div>
+        </div>
+      </div>
+      <div class="total-price-container">
+        <div>
+          <p class="order-heading">Total</p>
+          <p class="order-heading total-price">3000,-</p>
+        </div>
+      </div>
+    </section>
+    <form action="submit.php" method="POST">
+      <fieldset class="form-container">
+        <legend>Your details</legend>
+        <div class="input-container">
+          <label for="firstname">First Name*</label>
+          <input type="text" id="firstname" name="firstName" class="input">
+        </div>
+        <div class="input-container">
+          <label for="phonenumber">Phone number*</label>
+          <input type="tel" id="phonenumber" name="phonenumber" class="input">
+        </div>
+        <div class="input-container">
+          <label for="surname">Surname*</label>
+          <input type="text" id="surname" name="surname" class="input">
+        </div>
+        <div class="input-container">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" class="input">
+        </div>
+      </fieldset>
+      <fieldset class="form-container">
+        <legend>Delivery adress</legend>
+        <div class="input-container">
+          <label for="adress">Adress*</label>
+          <input type="text" id="adress" name="adress" class="input">
+        </div>
+        <div class="input-container">
+          <label for="city">City*</label>
+          <input type="text" id="city" name="city" class="input">
+        </div>
+        <div class="input-container">
+          <label for="post-code">Post code*</label>
+          <input type="text" id="post-code" name="post-code" class="input">
+        </div>
+        <div class="input-container">
+          <label for="country">Country*</label>
+          <input type="text" id="country" name="country" class="input">
+        </div>
+      </fieldset>
+      <input type="checkbox" id="billing-adress" class="checkbox"><label for="billing-adress">Billing adress same
+        as delivery
+        adress</label>
+      <fieldset class="form-container billing-adress-container">
+        <legend>Billing adress</legend>
+        <div class="input-container">
+          <label for="adress">Adress*</label>
+          <input type="text" id="adress" name="adress" class="input">
+        </div>
+        <div class="input-container">
+          <label for="city">City*</label>
+          <input type="text" id="city" name="city" class="input">
+        </div>
+        <div class="input-container">
+          <label for="post-code">Post code*</label>
+          <input type="text" id="post-code" name="post-code" class="input">
+        </div>
+        <div class="input-container">
+          <label for="country">Country*</label>
+          <input type="text" id="country" name="country" class="input">
+        </div>
+      </fieldset>
+      <div>
+        <input type="checkbox" id="remember-me" class="checkbox"><label for="remember-me">Remember me</label>
+      </div>
+      <fieldset class="form-container card-info-container">
+        <legend>Card info</legend>
+        <div class="input-container">
+          <label for="name-on-card">Name on card*</label>
+          <input type="text" id="name-on-card" name="name-on-card" class="input">
+        </div>
+        <div class="input-container">
+          <label for="expiery-date">Expiery date*</label>
+          <input type="date" id="expiery-date" name="expiery-date" class="input">
+        </div>
+        <div class="input-container">
+          <label for="card-number">Card number*</label>
+          <input type="text" id="card-number" name="card-number" class="input">
+        </div>
+        <div class="input-container">
+          <label for="cvc">CVC*</label>
+          <input type="text" id="cvc" name="cvc" class="input">
+        </div>
+      </fieldset>
+    </form>
+    <div class="remove-button-placement">
+      <a href="checkout_success.html"><button class="button checkout-button">Complete Order</button></a>
+    </div>
   </main>
   <footer>
     <section class="footer__direction">
