@@ -6,111 +6,110 @@ h1 {
     color: #113340;
 }
 
-    /* filter Gender */
+/* filter Gender */
 
-    .filter-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+.filter-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-    .button-adjustment {
-        place-self: center;
-    }
+.button-adjustment {
+    place-self: center;
+}
 
 
-    #filter, .filter-gender {
-        display: none;
-    }
-  
-    label:hover {
-        cursor: pointer;
-    }
-  
-    .filter-gender  {
-        background-color: #BEBDBA;
-        border-radius: 5px;
-        position: absolute;
-        padding: 10px;
-    }
-    
-    #filter:checked ~ .filter-gender {
-        display: block;
-    }
-  
-
-    .filter-button {
-        display: inline-block;
-        padding: 5px 10px;
-        border-radius: 5px;
-        background-color: #bebdba;
-    }
-
-    .checkbox-placement {
-        display: grid;
-        grid-template-columns: 1fr auto;
-    }
-
-  /* Filter sizes */
-  #filter-two, .filter-size {
+#filter, .filter-gender {
     display: none;
-  }
+}
   
-  label:hover {
+label:hover {
     cursor: pointer;
-  }
+}
   
-  #filter-two:checked ~ .filter-size {
-    display: block;
-  }
-
-
-  .filter-size  {
+.filter-gender  {
     background-color: #BEBDBA;
     border-radius: 5px;
     position: absolute;
     padding: 10px;
-  }
+}
+    
+#filter:checked ~ .filter-gender {
+    display: block;
+}
+  
+.filter-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+background-color: #bebdba;
+}
 
-   /* Filter colour */
-    #filter-three, .filter-colour {
-        display: none;
-      }
+.checkbox-placement {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+/* Filter sizes */
+#filter-two, .filter-size {
+    display: none;
+}
+  
+label:hover {
+    cursor: pointer;
+}
+  
+#filter-two:checked ~ .filter-size {
+    display: block;
+}
+
+
+.filter-size  {
+    background-color: #BEBDBA;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+}
+
+/* Filter colour */
+#filter-three, .filter-colour {
+    display: none;
+    }
       
-      label:hover {
-        cursor: pointer;
-      }
+label:hover {
+    cursor: pointer;
+}
       
-      .filter-colour  {
-        background-color: #BEBDBA;
-        border-radius: 5px;
-        position: absolute;
-        padding: 10px;
-      }
+.filter-colour  {
+    background-color: #BEBDBA;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+}
       
-      #filter-three:checked ~ .filter-colour {
-        display: block;
-      }
+#filter-three:checked ~ .filter-colour {
+    display: block;
+}
     
 
 /* Filter colour */
-    #filter-four, .filter-sortby {
-        display: none;
-      }
+#filter-four, .filter-sortby {
+    display: none;
+}
       
-      label:hover {
-        cursor: pointer;
-      }
+label:hover {
+    cursor: pointer;
+}
       
-      .filter-sortby  {
-        background-color: #BEBDBA;
-        border-radius: 5px;
-        position: absolute;
-        padding: 10px;
-      }
+.filter-sortby  {
+    background-color: #BEBDBA;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+}
       
-      #filter-four:checked ~ .filter-sortby {
-        display: block;
-      }
+#filter-four:checked ~ .filter-sortby {
+    display: block;
+}
 
 .aside-section {
     border: 1px solid #113340;
@@ -118,7 +117,7 @@ h1 {
     grid-template-columns: auto 1fr;
     justify-items: start;
     height: 25vh;
-    width: 80vh;
+    max-width: 80vh;
     margin-bottom: 20px
 }
 
@@ -281,10 +280,6 @@ h1 {
 }
 
 @media (max-width: 890px) {
-    .aside-section {
-        max-width: 500px;
-    }
-
     .star-button-container,
     .name-price-container {
     display: grid;
@@ -318,10 +313,6 @@ h1 {
 }
 
 @media (max-height: 780px) {
-    .aside-section {
-        max-width: 500px;
-    }
-
     .star-button-container {
     display: grid;
     grid-template-columns: auto auto;

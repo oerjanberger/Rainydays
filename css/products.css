@@ -1,0 +1,252 @@
+main {
+    margin: 0px auto;
+}
+
+h1 {
+    color: #113340;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.Product-info-subcontainer {
+    margin: 5px 10px;
+}
+
+.image-container {
+    margin-top: 10px;
+}
+
+.image-reel-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #bebdba;
+    border-radius: 5px;
+}
+
+.image-reel {
+    max-width: 100px;
+    max-height: 130px;
+    border-radius: 5px;
+}
+
+.image-reel:hover {
+    cursor: pointer;
+}
+
+.product__images {
+    width: 48vh;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 5px;
+}
+
+.heading-favorite-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gender-availability-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+.fa-heart {
+    align-self: center;
+}
+
+
+.in-stock {
+    border: solid #738775;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #738775;
+    align-self: center;
+}
+
+.in-stock-text {
+    color: #113340;
+    align-self: center;
+}
+
+.Product-info {
+    font-size: 1.5rem;
+    color: rgb(61, 57, 57);
+    margin: 0px;
+    align-self: center;
+}
+
+.price-shipping-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+.fa-shipping-fast {
+    font-size: 1.5rem;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.delivery-text {
+    align-self: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.star-button-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.stars {
+    align-self: center;
+}
+
+.fa-star,
+.fa-star-half {
+    color:#ff9e78;
+    font-size: 1.5rem;
+}
+
+.number-of-reviews {
+    color: #738775;
+    font-size: 1.2rem;
+}
+
+
+.checkbox-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(61, 57, 57);
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-label:hover {
+    cursor: auto;
+}
+
+
+/* Available Colours*/
+
+.colours {
+    display: flex;
+}
+
+.red {
+    border: solid red;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background-color: red;
+}
+.blue {
+    border: solid #231887;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background-color: #231887;
+}
+.orange {
+    border: solid #ff9e78;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background-color: #ff9e78;
+}
+.pink {
+    border: solid #9f14a4;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background-color: #9f14a4;
+}
+.teal {
+    border: solid #25ac9a;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background-color: #25ac9a;
+}
+
+/*Available sizes*/
+.sizes {
+    display: inline-block;
+    background-color: #bebdba;
+    margin: 15px 8px 10px 5px;
+    padding: 2px;
+    min-width: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 900px) {
+    .product-info-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .container-for-containers {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 100px 0px 30px 0px;
+    }
+
+    .product__images {
+        max-height: 400px;
+    }
+
+    #product-decription,
+    #details {
+        display: none;
+      }
+      
+
+    .checkbox-label:hover {
+        cursor: pointer;
+    }
+    
+    .checkbox {
+        margin-bottom: 20px;
+    }
+      
+    #product-decription:checked ~ .description-text{
+        display: none;
+    }
+    #details:checked ~ .details-text{
+        display: none;
+    }
+    
+    .checkbox-label {
+        margin: 0px 20px;
+    }
+
+    
+}
+
+@media (max-width: 360px) and (min-width: 600px) {
+    .product__images {
+        width: 50vh;
+    }
+}
