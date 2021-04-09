@@ -116,7 +116,7 @@ h1 {
 
 .star-button-container {
     margin-top: 20px;
-    display: flex;
+    display: flex; 
 }
 
 .stars {
@@ -218,7 +218,9 @@ input[type="radio"] {
     width: 0;
 }
 
-
+.checkbox-label {
+    text-decoration: underline rgb(61, 57, 57);
+}
 /* Available Colours*/
 
 .colours {
@@ -321,9 +323,17 @@ input[type="radio"] {
     #product-decription:checked ~ .description-text{
         display: none;
     }
+
+    #product-decription:checked ~ .checkbox-label {
+        text-decoration: none;
+    }
     
     #details:checked ~ .details-text{
         display: none;
+    }
+
+    #details:checked ~ .checkbox-label {
+        text-decoration: none;
     }
 
     #reveiws:checked ~ .reveiews-section-one{
@@ -332,6 +342,10 @@ input[type="radio"] {
 
     #reveiws:checked ~ .reveiews-section-two{
         display: none;
+    }
+
+    #reveiws:checked ~ .checkbox-label {
+        text-decoration: none;
     }
     
     .checkbox-label {
