@@ -167,6 +167,12 @@ h1 {
 
 
 /* Specific media queries for this page*/
+@media (max-width: 1100px) {
+    .size-container {
+        margin-bottom: 0px;
+    }
+}
+
 @media (max-width: 1000px) {
 
     .aside-section {
