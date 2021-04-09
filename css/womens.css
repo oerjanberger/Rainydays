@@ -155,7 +155,7 @@ label:hover {
     grid-template-columns: auto 1fr;
     justify-items: start;
     align-items: center;
-    margin-bottom: 6vh;
+    margin-bottom: 10%;
 }
 
 .star-button-container,

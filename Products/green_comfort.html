@@ -103,20 +103,31 @@
         </div>
         <p class="Product-info">Choose Colour:</p>
         <div class="colours">
-          <p class="red" title="red"></p>
-          <p class="blue" title="blue"></p>
-          <p class="orange" title=" orange"></p>
-          <p class="pink" title="pink"></p>
-          <p class="teal" title="teal"></p>
+          <input type="radio" name="colours" value="red" id="red" title="red" class="radio-colour"><label for="red"
+            class="red"></label>
+          <input type="radio" name="colours" value="blue" id="blue" title="blue" class="radio-colour"><label for="blue"
+            class="blue"></label>
+          <input type="radio" name="colours" value="orange" id="orange" title="orange" class="radio-colour"><label
+            for="orange" class="orange"></label>
+          <input type="radio" name="colours" value="pink" id="pink" title="pink" class="radio-colour"><label for="pink"
+            class="pink"></label>
+          <input type="radio" name="colours" value="teal" id="teal" title="teal" class="radio-colour"><label for="teal"
+            class="teal"></label>
         </div>
         <p class="Product-info">Choose Size:</p>
         <div>
-          <p class="sizes">XS</p>
-          <p class="sizes">S</p>
-          <p class="sizes">M</p>
-          <p class="sizes">L</p>
-          <p class="sizes">XL</p>
-          <p class="sizes">XXL</p>
+          <input type="radio" name="sizes" value="xs" id="xs" title="xs" class="radio-sizes"><label for="xs"
+            class="sizes">XS</label>
+          <input type="radio" name="sizes" value="s" id="s" title="s" class="radio-sizes"><label for="s"
+            class="sizes">S</label>
+          <input type="radio" name="sizes" value="m" id="m" title="m" class="radio-sizes"><label for="m"
+            class="sizes">M</label>
+          <input type="radio" name="sizes" value="l" id="l" title="l" class="radio-sizes"><label for="l"
+            class="sizes">L</label>
+          <input type="radio" name="sizes" value="xl" id="xl" title="xl" class="radio-sizes"><label for="xl"
+            class="sizes">XL</label>
+          <input type="radio" name="sizes" value="xxl" id="xxl" title="xxl" class="radio-sizes"><label for="xxl"
+            class="sizes">XXL</label>
         </div>
         <div class="price-shipping-container">
           <p class="price">Kr 1500,-</p>
@@ -133,7 +144,7 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
+            <i class="fas fa-star"></i>
           </div>
           <p class="number-of-reviews">(12)</p>
         </div>
@@ -178,12 +189,103 @@
       </div>
       <div class="product-reveiws-container">
         <input type="checkbox" id="reveiws" class="checkbox"><label for="reveiws" class="checkbox-label">Reviews</label>
-        <div>
-
+        <div class="reveiews-section-one">
+          <h3>Add Reveiw</h3>
+          <div class="stars-name-container">
+            <input type="text" placeholder="Your Name" name="your-name" alt="Your Name" class="reveiws-your-name">
+            <div class="reviews-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div>
+            <textarea placeholder="Add Review" name="add-reveiw" alt="add reveiw" class="add-reveiw"></textarea>
+          </div>
+          <div class="reveiew-button-cotainer">
+            <button class="button">Add Reveiw</button>
+            <p class="reveiws-from-others">Reveiws from others:</p>
+          </div>
+          <div class="others-reveiw-container">
+            <p class="reviews-name">Kari Normann</p>
+            <div class="reviews-others-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the.</p>
+          </div>
+          <div class="others-reveiw-container">
+            <p class="reviews-name">Ola Normann</p>
+            <div class="reviews-others-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star star-empty"></i>
+            </div>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the.</p>
+          </div>
+        </div>
+        <div class="reveiews-section-two">
+          <p class="reveiws-from-others">Reveiws from others:</p>
+          <div class="others-reveiw-container">
+            <p class="reviews-name">Name Namesen</p>
+            <div class="reviews-others-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the.</p>
+          </div>
+          <div class="others-reveiw-container">
+            <p class="reviews-name">Navn Navnesen</p>
+            <div class="reviews-others-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star star-empty"></i>
+            </div>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the.</p>
+          </div>
+          <div class="others-reveiw-container">
+            <p class="reviews-name">Jane Doe</p>
+            <div class="reviews-others-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the.</p>
+          </div>
+          <div class="others-reveiw-container">
+            <p class="reviews-name">John Doe</p>
+            <div class="reviews-others-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+              and I will give you a complete account of the system, and expound the actual teachings of the.</p>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
   <footer>
     <section class="footer__direction">
