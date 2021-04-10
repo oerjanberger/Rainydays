@@ -3,7 +3,6 @@ main {
 }
 
 h1 {
-    color: #113340;
     font-weight: normal;
     margin: 0px;
 }
@@ -25,7 +24,7 @@ h1 {
 .image-reel-container {
     display: flex;
     justify-content: space-between;
-    background-color: #bebdba;
+    background-color: var(--rainydays-grey);
     border-radius: 5px;
 }
 
@@ -67,23 +66,22 @@ h1 {
 }
 
 .in-stock {
-    border: solid #738775;
+    border: solid var(--rainydays-green);
     border-radius: 50%;
     width: 10px;
     height: 10px;
     margin: 5px;
-    background-color: #738775;
+    background-color: var(--rainydays-green);
     align-self: center;
 }
 
 .in-stock-text {
-    color: #113340;
+    color: var(--rainydays-blue);
     align-self: center;
 }
 
 .Product-info {
-    font-size: 1.5rem;
-    color: rgb(61, 57, 57);
+    color: var(--text-light-grey);
     margin: 0px;
     align-self: center;
 }
@@ -95,11 +93,9 @@ h1 {
 
 .price {
     font-weight: bold;
-    font-size: 1.5rem
 }
 
 .fa-shipping-fast {
-    font-size: 1.5rem;
     align-self: center;
     margin-right: 10px;
 }
@@ -124,13 +120,15 @@ h1 {
 }
 
 .fa-star,
-.fa-star-half {
-    color:#ff9e78;
+.fa-star-half,
+.price,
+.fa-shipping-fast,
+.Product-info  {
     font-size: 1.5rem;
 }
 
 .number-of-reviews {
-    color: #738775;
+    color: var(--rainydays-green);
     font-size: 1.2rem;
 }
 
@@ -142,7 +140,7 @@ h1 {
 .checkbox-label {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(61, 57, 57);
+    color: var(--text-light-grey);
 }
 
 .checkbox {
@@ -169,7 +167,7 @@ h1 {
     height: 25px;
     border-radius: 5px;
     font-size: 1.2rem;
-    border: 1px solid rgb(61, 57, 57);
+    border: 1px solid var(--text-light-grey);
 }
 
 .reviews-stars {
@@ -182,12 +180,12 @@ h1 {
     height: 100px;
     border-radius: 5px;
     font-size: 1.2rem;
-    border: 1px solid rgb(61, 57, 57);
+    border: 1px solid var(--text-light-grey);
     font-family: "moniker", Arial, Helvetica, sans-serif;
 }
 
 .others-reveiw-container {
-    border: 1px solid rgb(61, 57, 57);
+    border: 1px solid var(--text-light-grey);
     margin-bottom: 20px;
     align-items: center;
 }
@@ -195,7 +193,7 @@ h1 {
 .reveiws-from-others,
 .reviews-name {
     font-size: 1.2rem;
-    color: rgb(61, 57, 57);
+    color: var(--text-light-grey);
 }
 
 .reviews-others-stars {
@@ -208,9 +206,8 @@ h1 {
 
 .radio-colour:checked + label,
 .radio-sizes:checked + label {
-    border: 2px solid #00ff34;
+    border: 2px solid var(--heighlight-colour);
 }
-
 
 input[type="radio"] {
     opacity: 0;
@@ -219,63 +216,39 @@ input[type="radio"] {
 }
 
 .checkbox-label {
-    text-decoration: underline rgb(61, 57, 57);
+    text-decoration: underline var(--text-light-grey);
 }
 /* Available Colours*/
 
-.colours {
-    display: flex;
-}
-
 .red {
-    border: solid red;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
     margin: 15px;
-    background-color: red;
 }
 .blue {
-    border: solid #231887;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
     margin: 15px;
-    background-color: #231887;
 }
 .orange {
-    border: solid #ff9e78;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
     margin: 15px;
-    background-color: #ff9e78;
 }
 .pink {
-    border: solid #9f14a4;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
     margin: 15px;
-    background-color: #9f14a4;
 }
 .teal {
-    border: solid #25ac9a;
-    border-radius: 50%;
     width: 25px;
     height: 25px;
     margin: 15px;
-    background-color: #25ac9a;
 }
 
 /*Available sizes*/
 .sizes {
-    display: inline-block;
-    background-color: #bebdba;
     margin: 15px 8px 10px 5px;
-    padding: 2px;
-    min-width: 40px;
-    text-align: center;
     font-size: 1.2rem;
 }
 

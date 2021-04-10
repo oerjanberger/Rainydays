@@ -2,55 +2,20 @@ main {
     margin: 0px auto;
 }
 
-h1 {
-    color: #113340;
-}
-
 .order-container {
-    border: 1px solid #bebdba;
+    border: 1px solid var(--rainydays-grey);
     margin-bottom: 20px;
 }
 
 .personal-info {
     margin: 0px;
     font-size: 1.3rem;
-    color: rgb(61, 57, 57);
-}
-
-.specific-order-container {
-    display: grid;
-    grid-template-columns: 1fr 100px 50px;
-    border-bottom: 1px solid #bebdba;
-}
-
-.order-text {
-    margin: 0px;
-}
-
-.order-heading {
-    font-weight: bold;
-}
-
-.number-container,
-.price-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.total-price-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.total-price {
-    text-decoration: underline;
+    color: var(--text-light-grey);
 }
 
 h3 {
     font-weight: normal;
-    color: #113340;
+    color: var(--rainydays-blue);
 }
 
 .instagram-tag-placement {

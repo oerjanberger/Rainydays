@@ -2,9 +2,6 @@ main {
     margin: 0px auto;
 }
 
-h1 {
-    color: #113340;
-}
 
 /* filter Gender */
 
@@ -27,99 +24,20 @@ label:hover {
 }
   
 .filter-gender  {
-    background-color: #BEBDBA;
+    background-color: var(--rainydays-grey);
     border-radius: 5px;
     position: absolute;
     padding: 10px;
+}
+
+.gender-filter-button {
+    margin-right: 15px;
 }
     
 #filter:checked ~ .filter-gender {
     display: block;
 }
   
-.filter-button {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
-background-color: #bebdba;
-}
-
-.checkbox-placement {
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
-
-/* Filter sizes */
-#filter-two, .filter-size {
-    display: none;
-}
-  
-label:hover {
-    cursor: pointer;
-}
-  
-#filter-two:checked ~ .filter-size {
-    display: block;
-}
-
-
-.filter-size  {
-    background-color: #BEBDBA;
-    border-radius: 5px;
-    position: absolute;
-    padding: 10px;
-}
-
-/* Filter colour */
-#filter-three, .filter-colour {
-    display: none;
-    }
-      
-label:hover {
-    cursor: pointer;
-}
-      
-.filter-colour  {
-    background-color: #BEBDBA;
-    border-radius: 5px;
-    position: absolute;
-    padding: 10px;
-}
-      
-#filter-three:checked ~ .filter-colour {
-    display: block;
-}
-    
-
-/* Filter colour */
-#filter-four, .filter-sortby {
-    display: none;
-}
-      
-label:hover {
-    cursor: pointer;
-}
-      
-.filter-sortby  {
-    background-color: #BEBDBA;
-    border-radius: 5px;
-    position: absolute;
-    padding: 10px;
-}
-      
-#filter-four:checked ~ .filter-sortby {
-    display: block;
-}
-
-.aside-section {
-    border: 1px solid #113340;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
-    height: 25vh;
-    max-width: 80vh;
-    margin-bottom: 20px
-}
 
 /* Image adjustment */
 .product__images {
@@ -149,129 +67,6 @@ label:hover {
 }
 
 
-.product-info-container {
-    margin: 10px 10px 10px 20px;
-}
-
-
-.jacket-name {
-    display: inline-block;
-    margin: 0px;
-    font-weight: normal;
-    color: #113340;
-}
-
-
-.price-tag,
-.gender {
-    margin: 0px;
-}
-
-.colours-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
-    align-items: center;
-}
-
-.size-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
-    align-items: center;
-    margin-bottom: 10%;
-}
-
-.star-button-container,
-.name-price-container {
-    display: grid;
-    grid-template-columns: 20vh 30vh;
-}
-
-
-.price-tag,
-.button-container {
-    justify-self: right;
-}
-
-.fa-star,
-.fa-star-half {
-    color:#ff9e78;
-    font-size: 1.2rem;
-}
-
-.button {
-    border-radius: 8px;
-    background-color: #113340;
-    color: #efeae6;
-    width: 150px;
-    height: 30px;
-    border: none;
-    font-weight: bold;
-}
-
-.button:hover {
-    cursor: pointer;
-}
-
-/* Available Colours*/
-
-.colours {
-    display: flex;
-}
-
-.red {
-    border: solid red;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: red;
-}
-.blue {
-    border: solid #231887;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #231887;
-}
-.orange {
-    border: solid #ff9e78;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #ff9e78;
-}
-.pink {
-    border: solid #9f14a4;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #9f14a4;
-}
-.teal {
-    border: solid #25ac9a;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #25ac9a;
-}
-
-/*Available sizes*/
-.sizes {
-    display: inline-block;
-    background-color: #bebdba;
-    margin: 3px;
-    padding: 2px;
-    min-width: 20px;
-    text-align: center;
-}
-
-
 /*media queries for this page */
 @media (max-height: 1000px) {
     .size-container {
@@ -279,7 +74,7 @@ label:hover {
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 890px) {   
     .star-button-container,
     .name-price-container {
     display: grid;

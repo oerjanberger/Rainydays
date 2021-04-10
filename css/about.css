@@ -1,19 +1,9 @@
 main {
-    color: #434343;
+    color: var(--text-light-grey);
     margin: 0px auto;
-}
-
-h1 {
-    color: #113340;
 }
 
 .text {
     display: inline-block;
     max-width: 500px;
-}
-
-@media (min-width: 1750px) {
-    main {
-        margin-left: 500px;
-    }
 }

@@ -6,10 +6,6 @@ main {
     margin: 0px auto;
 }
 
-h1 {
-    color: #113340;
-}
-
 .telephone {
     display: flex;
     flex-direction: row;
@@ -30,15 +26,10 @@ h1 {
 .social {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .icons {
     display: inline-block;
     margin: 10px 10px 40px 10px;
-}
-
-@media (min-width: 1750px) {
-    main {
-        margin-left: 500px;
-    }
 }

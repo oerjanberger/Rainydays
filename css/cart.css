@@ -6,20 +6,6 @@ main {
     margin-bottom: 20px
 }
 
-h1 {
-    color: #113340;
-}
-
-.aside-section {
-    border: 1px solid #113340;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
-    height: 25vh;
-    width: 80vh;
-    margin-bottom: 20px
-}
-
 /* Image adjustment */
 .product__images {
     width: 25vh;
@@ -31,130 +17,9 @@ h1 {
     object-position: center 30%;
 }
 
-
-.product-info-container {
-    margin: 10px 10px 10px 20px;
-}
-
-.jacket-name {
-    display: inline-block;
-    margin: 0px;
-    font-weight: normal;
-    color: #113340;
-}
-
-.price-tag,
-.gender {
-    margin: 0px;
-}
-
-.remove-x {
-    display: inline-block;
-    color: #113340;
-    font-size: 1.2rem;
-}
-
-.remove-x:hover {
-    cursor: pointer;
-}
-
-.colours-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
-    align-items: center;
-}
-
-.size-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
-    align-items: center;
-    margin-bottom: 10%;
-}
-
-.star-button-container {
-    display: grid;
-    grid-template-columns: 20vh 30vh;
-}
-
 .name-price-container {
     display: grid;
     grid-template-columns: 20vh 25vh 5vh;
-}
-
-.price-tag,
-.button-container {
-    justify-self: right;
-}
-
-.remove-button-placement {
-    display: grid;
-    justify-items: end;
-    margin-bottom: 20px;
-  }
-
-.remove-button {
-    max-width: 150px;
-    border-radius: 20px;
-  }
-
-
-/* Available Colours*/
-
-.colours {
-    display: flex;
-}
-
-.red {
-    border: solid red;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: red;
-}
-.blue {
-    border: solid #231887;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #231887;
-}
-.orange {
-    border: solid #ff9e78;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #ff9e78;
-}
-.pink {
-    border: solid #9f14a4;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #9f14a4;
-}
-.teal {
-    border: solid #25ac9a;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #25ac9a;
-}
-
-/*Available sizes*/
-.sizes {
-    display: inline-block;
-    background-color: #bebdba;
-    margin: 3px;
-    padding: 2px;
-    min-width: 20px;
-    text-align: center;
 }
 
 /* Specific media queries for this page*/
