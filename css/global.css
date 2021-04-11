@@ -167,7 +167,7 @@ h1 {
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
-background-color: var(--site-background-white);
+background-color: var(--rainydays-grey);
 }
 
 .button-adjustment {
@@ -583,6 +583,16 @@ a {
 
   .logo img {
     max-width: 350px;
+  }
+}
+
+@media (max-width: 390px) {
+  .filter-sortby {
+      right: 10px;
+  }
+
+  .filter-gender {
+      left: 0px;
   }
 }
 

@@ -107,9 +107,3 @@ main {
     }
     
 }
-
-@media (max-width: 390px) {
-    .filter-sortby {
-        left: 245px;
-    }
-}

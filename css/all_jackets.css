@@ -140,6 +140,10 @@ label:hover {
 
 @media (max-width: 390px) {
     .filter-sortby {
-        left: 245px;
+        right: 10px;
+    }
+
+    .filter-gender {
+        left: 0px;
     }
 }
