@@ -155,12 +155,6 @@ h1 {
     font-weight: bold;
 }
 
-.product-reveiws-container,
-.product-details-container {
-    margin-left: 10px;
-}
-
-
 .reveiws-your-name {
     margin: 0px 40px 20px 0px;
     width: 250px;
@@ -277,6 +271,11 @@ input[type="radio"] {
 
     .product__images {
         max-height: 400px;
+    }
+
+    .product-reveiws-container,
+    .product-details-container {
+    margin-left: 10px;
     }
 
     #product-decription,
