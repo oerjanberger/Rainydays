@@ -46,17 +46,25 @@ nav {
 }
 
 nav h2 {
-  margin-left: 20px;
   font-style: normal;
 }
 
-nav ul {
+.nav-section-container {
   display: flex;
+  align-items: center;
 }
 
-nav li {
+.nav-section {
   display: inline-block;
   margin: 0px 20px;
+}
+
+.nav-elements-container {
+    display: flex;
+}
+
+.navelements {
+    margin: 0px 20px;
 }
 
 #dropdown, .hamburger-menu {
@@ -460,6 +468,12 @@ a {
 
 
 /* Global Media Queries*/
+@media (max-width: 1795px) {
+  .nav-section-h2 {
+      margin: 0px;
+  }
+}
+
 @media (min-width: 1751px) {
   header {
     display: flex;
@@ -484,9 +498,13 @@ a {
     margin-left: 0px;
   }
 
-  nav ul {
+  .nav-section-container  {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav-section_searchbar-container {
+      margin-bottom: 15px;
   }
 
   footer {
@@ -516,7 +534,7 @@ a {
     padding: 20px 0px;
   }
 
-  nav ul {
+  .nav-section-container {
     align-items: center;
     padding: 0px;
     margin: 0px;
@@ -525,10 +543,6 @@ a {
   .nav-section_searchbar {
     grid-column: 1/-1;
     margin: 0px 0px 20px 0px;
-  }
-
-  .navelements {
-    grid-row: 3/2;
   }
 
   .hyperlinks {
