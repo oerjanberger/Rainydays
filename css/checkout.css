@@ -14,6 +14,7 @@ h3 {
 
 }
 
+
 .input {
     border: 2px solid var(--rainydays-grey);
     border-radius: 5px;
@@ -48,4 +49,10 @@ h3 {
     main {
         margin: 0px auto;
     }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
   }
