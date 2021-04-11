@@ -588,11 +588,11 @@ a {
 
 @media (max-width: 390px) {
   .filter-sortby {
-      right: 10px;
+      right: 15px;
   }
 
   .filter-gender {
-      left: 0px;
+      left: 5px;
   }
 }
 
